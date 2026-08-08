@@ -27,6 +27,11 @@ FocusQuest AI addresses this by combining AI-powered task decomposition, persona
 ## 🧠 AI Cognitive Coach
 
 FocusQuest AI uses Gemini AI to transform large and overwhelming tasks into smaller actionable steps.
+## 🏗️ System Architecture
+
+FocusQuest AI uses a layered architecture that combines Gemini-powered task decomposition, personalized learning, quest management, gamification, cognitive visualization, and learning analytics.
+
+![FocusQuest AI System Architecture](docs/architecture.png)
 
 Example:
 
