@@ -1,20 +1,44 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🚀 FocusQuest AI
 
-# Run and deploy your AI Studio app
+### AI-Powered Cognitive Workspace for Neurodivergent Learners
 
-This contains everything you need to run your app locally.
+FocusQuest AI is an AI-powered cognitive learning and productivity platform designed to help learners overcome task-initiation difficulties, reduce cognitive overload, and transform overwhelming goals into manageable learning quests.
 
-View your app in AI Studio: https://ai.studio/apps/a8a8c245-dfa2-49d2-af40-4a2fc5e74e50
+---
 
-## Run Locally
+## 🧠 Problem
 
-**Prerequisites:**  Node.js
+Starting a large assignment, project, or learning goal can be overwhelming.
 
+Traditional productivity applications provide simple task lists, but they don't adapt to:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- The complexity of the task
+- Available study time
+- Learning preferences
+- Previous learning progress
+- The learner's current focus
+
+FocusQuest AI addresses this by combining AI-powered task decomposition, personalized learning, gamification, and cognitive-friendly design.
+
+---
+
+# ✨ Key Features
+
+## 🧠 AI Cognitive Coach
+
+FocusQuest AI uses Gemini AI to transform large and overwhelming tasks into smaller actionable steps.
+
+Example:
+
+```text
+Learn Data Structures
+        ↓
+Understand Arrays
+        ↓
+Practice Two Pointers
+        ↓
+Learn Linked Lists
+        ↓
+Study Trees
+        ↓
+Learn Graphs
