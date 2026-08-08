@@ -1,0 +1,6 @@
+{
+  "name": "FocusQuest AI",
+  "description": "Gamified task management, AI planner, focus timer, and analytics app.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

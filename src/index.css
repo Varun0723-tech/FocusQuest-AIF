@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #0B0F17;
+    color: #F8FAFC;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Design System Utilities */
+@layer utilities {
+  /* Glassmorphic & Modern Obsidian Cards */
+  .glass-card {
+    background: rgba(17, 24, 39, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+  }
+
+  .glass-card-interactive {
+    background: rgba(17, 24, 39, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .glass-card-interactive:hover {
+    background: rgba(24, 33, 53, 0.8);
+    border-color: rgba(139, 92, 246, 0.35);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px -10px rgba(139, 92, 246, 0.2);
+  }
+
+  /* Linear-style Glow Accent */
+  .glow-purple {
+    box-shadow: 0 0 35px -5px rgba(139, 92, 246, 0.3);
+  }
+
+  .glow-amber {
+    box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.25);
+  }
+
+  .glow-emerald {
+    box-shadow: 0 0 35px -5px rgba(16, 185, 129, 0.25);
+  }
+
+  /* Custom Pill Buttons */
+  .btn-pill {
+    border-radius: 9999px;
+    font-weight: 700;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .btn-pill:active {
+    transform: scale(0.97);
+  }
+
+  .btn-primary-pill {
+    background: linear-gradient(135deg, #8B5CF6 0%, #6366F1 50%, #3B82F6 100%);
+    color: #FFFFFF;
+    box-shadow: 0 8px 20px -6px rgba(139, 92, 246, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .btn-primary-pill:hover {
+    background: linear-gradient(135deg, #9333EA 0%, #4F46E5 50%, #2563EB 100%);
+    box-shadow: 0 12px 28px -6px rgba(139, 92, 246, 0.7);
+  }
+
+  .btn-secondary-pill {
+    background: rgba(255, 255, 255, 0.05);
+    color: #E2E8F0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .btn-secondary-pill:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(11, 15, 23, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.4);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
